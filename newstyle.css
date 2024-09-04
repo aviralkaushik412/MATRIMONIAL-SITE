@@ -1,0 +1,138 @@
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  .bg-featured-blog {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 15rem;
+  }
+.parallax-header, .parallax-feature, .parallax-testimonial, .parallax-blog {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Header Parallax */
+  .parallax-header {
+    background-image: url('./imageshere/couples.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+  }
+  
+  .parallax-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+  
+  /* Features Parallax */
+  .parallax-feature {
+    background-image: url('./imageshere/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax-feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+  
+  /* Testimonial Parallax */
+  .parallax-testimonial {
+    background-image: url('./imageshere/hands.avif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax-testimonial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+  
+  /* Blog Parallax */
+  .parallax-blog {
+    background-image: url('./imageshere/rings.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax-blog::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+  }
+  
+  /* Ensure content is above the overlay */
+  .parallax-header .container,
+  .parallax-feature .container,
+  .parallax-testimonial .container,
+  .parallax-blog .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
+  
+  /* 2nd page ke features ke boxes */
+  
+  .feature-box {
+    margin-right: 0px;
+    background-color: rgba(255, 255, 255, 0.5); /*-=deccrease last one to make*/
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out; 
+    color: black;
+  }
+  .feature-box2 {
+    margin-bottom: 20px;
+    height: 90px;
+    border-radius: 15px; 
+    padding: 20px;
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.05); /* <--------=---- zoom effeeeeeect */
+  }
+  
+  
+  
